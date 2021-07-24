@@ -1,0 +1,73 @@
+/* Header */
+h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 2px 0 #131313;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align:center;
+}
+
+footer {
+  position: absolute;
+  padding: 32px;
+  right:0;bottom:0;left:0;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+
+/* (A) WRAPPER */
+#quizWrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* (B) QUESTION */
+#quizQn {
+  margin: 32px 0;
+  padding: 32px;
+  background: #131313;
+  border: 2px solid #eee;
+  color: #fff;
+  font-size: 24px;
+  text-align:center;
+  border-radius: 16px;
+}
+
+/* (C) ANSWERS */
+#quizAns {
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 16px;
+}
+#quizAns input[type=radio] { display: none; }
+#quizAns label {
+  background: #eae7dc;
+  border: 2px solid #131313;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+}
+#quizAns label.correct {
+  background: #00ff00;
+  border: 1px solid #ffffffr;
+}
+#quizAns label.wrong {
+  background: #e60000;
+  border: 1px solid #ffffff;
+}
+
+/* (D) BODY */
+html, body {
+  background-image: url("marvelbgr.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: arial, sans-serif;
+}
